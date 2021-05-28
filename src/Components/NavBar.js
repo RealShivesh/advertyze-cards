@@ -3,9 +3,9 @@ import './NavBar.css'
 
 function NavBar() {
     return (
+        
         <navbar>
-            
-            BrandName
+                BrandName
         </navbar>
     )
 }
