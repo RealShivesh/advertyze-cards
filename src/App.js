@@ -27,18 +27,14 @@ function App() {
       <div className="App">
         <center><NavBar /></center>
         <div className="grid">
-        {users.length &&
-          users.map((user) => {
-            return (
               <>
-              <div className="item-1"><Cards key={user.id} /></div>
-          <div className="item-2"><Cards key={user.id} /></div>
-          <div className="item-3"><Cards key={user.id} /></div>
-          <div className="item-4"><Cards key={user.id} /></div>
-          <div className="item-5"><Cards key={user.id} /></div>
-          <div className="item-6"><Cards key={user.id} /></div>
-            </>);
-          })}
+              <div className="item-1"><Cards user={users} /></div>
+          <div className="item-2"><Cards user={users} /></div>
+          <div className="item-3"><Cards user={users} /></div>
+          <div className="item-4"><Cards user={users} /></div>
+          <div className="item-5"><Cards user={users} /></div>
+          <div className="item-6"><Cards user={users} /></div>
+            </>
           
         </div>
     </div>
