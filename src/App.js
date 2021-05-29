@@ -11,7 +11,7 @@ function App() {
   useEffect(() => {
     const profileData = async () => {
       setLoading(true)
-      const res = await axios("https://reqres.in/api/users?page=1")
+      const res = await axios("https://reqres.in/api/users")
       console.log(res.data)
       setUsers(res.data)
       setLoading(false)
@@ -28,14 +28,13 @@ function App() {
         <center><NavBar /></center>
         <div className="grid">
               <>
-              <div className="item-1"><Cards user={users} /></div>
-          <div className="item-2"><Cards user={users} /></div>
-          <div className="item-3"><Cards user={users} /></div>
-          <div className="item-4"><Cards user={users} /></div>
-          <div className="item-5"><Cards user={users} /></div>
-          <div className="item-6"><Cards user={users} /></div>
+          <div className="item-1"><Cards users={users} /></div>
+          <div className="item-2"><Cards users={users} /></div>
+          <div className="item-3"><Cards users={users} /></div>
+          <div className="item-4"><Cards users={users} /></div>
+          <div className="item-5"><Cards users={users} /></div>
+          <div className="item-6"><Cards users={users} /></div>
             </>
-          
         </div>
     </div>
       </>
