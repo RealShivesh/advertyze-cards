@@ -1,3 +1,13 @@
+section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .card {
   -webkit-box-shadow: #00f000;
           box-shadow: #00f000;
@@ -6,11 +16,44 @@
   margin-top: 15px;
   margin-bottom: 15px;
   background-color: #00ff00;
-  width: 100%;
+  width: 250px;
   height: 300px;
 }
 
 .card img {
-  border: 5px solid #3d3d3d;
+  margin-top: 20px;
+  border: 2px solid #3d3d3d;
+  border-radius: 20px;
+}
+
+.card h1 {
+  font-size: large;
+}
+
+.card h2 {
+  font-size: medium;
+}
+
+section {
+  display: -ms-grid;
+  display: grid;
+}
+
+@media only screen and (max-width: 750px) {
+  section {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  section {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 /*# sourceMappingURL=Cards.css.map */

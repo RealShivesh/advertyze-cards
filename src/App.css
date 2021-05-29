@@ -1,28 +1,5 @@
-.grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 15px;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-@media only screen and (max-width: 600px) {
-  .grid {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-}
-
-@media only screen and (max-width: 750px) {
-  .grid {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-  }
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+.App {
+  font-family: 'Poppins';
 }
 /*# sourceMappingURL=App.css.map */
