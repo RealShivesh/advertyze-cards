@@ -27,14 +27,7 @@ function App() {
       <div className="App">
         <center><NavBar /></center>
         <div className="grid">
-              <>
-          <div className="item-1"><Cards users={users} /></div>
-          <div className="item-2"><Cards users={users} /></div>
-          <div className="item-3"><Cards users={users} /></div>
-          <div className="item-4"><Cards users={users} /></div>
-          <div className="item-5"><Cards users={users} /></div>
-          <div className="item-6"><Cards users={users} /></div>
-            </>
+          <Cards users={users} />
         </div>
     </div>
       </>
