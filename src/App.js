@@ -11,9 +11,6 @@ function App() {
   useEffect(() => {
     const profileData = async () => {
       setLoading(true)
-      const res = await axios("https://reqres.in/api/users")
-      console.log(res.data)
-      setUsers(res.data)
       setLoading(false)
     }
 
@@ -22,10 +19,16 @@ function App() {
 
   if (loading) return 'Loading....'
 
+  async function getUsers() {
+    const res = await axios.get("https://reqres.in/api/users")
+      console.log(res.data)
+      setUsers(res.data.data)
+  }
+
   return (
     <>
       <div className="App">
-        <center><NavBar /></center>
+        <center><NavBar getUsers={getUsers}/></center>
         <div className="grid">
           <Cards users={users} />
         </div>

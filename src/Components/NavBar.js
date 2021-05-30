@@ -1,11 +1,12 @@
 import React from 'react'
 import './NavBar.css'
 
-function NavBar() {
+function NavBar({getUsers}) {
     return (
         <div>
             <div className="navbar">BrandName</div>
-            <button>GET USERS</button>
+            <button onClick={getUsers}>GET USERS</button>
+            <br/>
         Page 1 |
         Page 2</div>
     )
