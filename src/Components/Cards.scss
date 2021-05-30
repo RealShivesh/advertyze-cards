@@ -8,19 +8,18 @@ section{
 
 
 .card{
-    box-shadow: darken($color: #00ff00, $amount: 3);
-    border-radius: 10px;
-    padding-left: 5px;
     margin-top: 15px;
     margin-bottom: 15px;
-    background-color: #00ff00;
-    width: 250px;
-    height: 300px;
+    background-color: #CDD1E3;
+    width: 270px;
+    height: 360px;
+    box-shadow: -10px 10px 2px #B0B8E3;
+    border-radius: 40px;
 
     img{
-        margin-top: 20px;
-        border: 2px solid #3d3d3d;
-        border-radius: 20px;
+        width: 270px;
+        height: 180px;
+        border-radius: 40px 40px 0 0;
     }
 
     h1{
